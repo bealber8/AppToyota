@@ -6,11 +6,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONObject;
 
 public class ToyotaActivity extends AppCompatActivity {
     private Spinner spinnerOptions;
+    TextView textViewModels;
+    Button buttonInformation;
 
     final static String[] models = new String []{"Menú", "Modelos", "Contacto",
             "Login"};
@@ -35,13 +48,64 @@ public class ToyotaActivity extends AppCompatActivity {
             {
                 if (pos == 1){
                     goToModels();
+                } else {
+                    if (pos == 2){
+                        goToContact();
+                    } else {
+                        if (pos == 3){
+                            goToLogin();
+                        }
+                    }
                 }
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> parent)
             {    }
+
+
         });
+
+        textViewModels = (TextView) findViewById(R.id.textViewModels);
+        buttonInformation = (Button) findViewById( R.id.buttonInformation );
+        buttonInformation.setOnClickListener( (new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showInformation();
+            }
+        }));
+
+    }
+
+    private void showInformation() {
+        String url = "http://192.168.1.40:40000/api/avensis";
+        RequestQueue requestQueue;
+
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest
+                (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
+
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        textViewModels.setText("Response from server: " + response.toString());
+                    }
+                }, new Response.ErrorListener() {
+
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        textViewModels.setText("Error: " + error.toString());
+
+                    }
+                });
+
+        requestQueue = Volley.newRequestQueue(this);
+        requestQueue.add(jsonObjectRequest);
+    }
+
+    private void goToLogin() {
+
+    }
+
+    private void goToContact() {
 
     }
 

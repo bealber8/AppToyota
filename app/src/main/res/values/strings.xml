@@ -2,5 +2,13 @@
     <string name="app_name">Toyota</string>
     <string name="title_activity_models">ModelsActivity</string>
     <string name="buttonAvensis">Toyota Avensis</string>
+    <string name="buttonAuris">Toyota Auris</string>
+    <string name="buttonAygo">Toyota Aygo</string>
+    <string name="buttonYaris">Toyota Yaris</string>
+    <string name="buttonGt86">Toyota GT86</string>
+    <string name="buttonLandCruiser">Toyota Land Cruiser</string>
+    <string name="buttonRav4">Toyota RAV4</string>
+    <string name="buttonChr">Toyota C-HR</string>
+    <string name="title_activity_avensis">AvensisActivity</string>
 
 </resources>
