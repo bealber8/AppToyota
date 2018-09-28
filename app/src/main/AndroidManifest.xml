@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.beatriz.toyota">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -35,6 +35,78 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.beatriz.toyota.ModelsActivity" />
+        </activity>
+        <activity
+            android:name=".AurisActivity"
+            android:label="@string/title_activity_auris"
+            android:parentActivityName=".ModelsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.beatriz.toyota.ModelsActivity" />
+        </activity>
+        <activity
+            android:name=".AygoActivity"
+            android:label="@string/title_activity_aygo"
+            android:parentActivityName=".ModelsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.beatriz.toyota.ModelsActivity" />
+        </activity>
+        <activity
+            android:name=".YarisActivity"
+            android:label="@string/title_activity_yaris"
+            android:parentActivityName=".ModelsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.beatriz.toyota.ModelsActivity" />
+        </activity>
+        <activity
+            android:name=".Gt86Activity"
+            android:label="@string/title_activity_gt86"
+            android:parentActivityName=".ModelsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.beatriz.toyota.ModelsActivity" />
+        </activity>
+        <activity
+            android:name=".LandCruiserActivity"
+            android:label="@string/title_activity_land_cruiser"
+            android:parentActivityName=".ModelsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.beatriz.toyota.ModelsActivity" />
+        </activity>
+        <activity
+            android:name=".Rav4Activity"
+            android:label="@string/title_activity_rav4"
+            android:parentActivityName=".ModelsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.beatriz.toyota.ModelsActivity" />
+        </activity>
+        <activity
+            android:name=".ChrActivity"
+            android:label="@string/title_activity_chr"
+            android:parentActivityName=".ModelsActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.beatriz.toyota.ModelsActivity" />
+        </activity>
+        <activity
+            android:name=".ContactUsActivity"
+            android:label="@string/title_activity_contac_us"
+            android:parentActivityName=".ToyotaActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.beatriz.toyota.ToyotaActivity" />
         </activity>
     </application>
 

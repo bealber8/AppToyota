@@ -10,5 +10,23 @@
     <string name="buttonRav4">Toyota RAV4</string>
     <string name="buttonChr">Toyota C-HR</string>
     <string name="title_activity_avensis">AvensisActivity</string>
+    <string name="title_activity_auris">AurisActivity</string>
+    <string name="title_activity_aygo">AygoActivity</string>
+    <string name="title_activity_yaris">YarisActivity</string>
+    <string name="title_activity_gt86">Gt86Activity</string>
+    <string name="title_activity_land_cruiser">LandCruiserActivity</string>
+    <string name="title_activity_rav4">Rav4Activity</string>
+    <string name="title_activity_chr">ChrActivity</string>
+    <string name="title_activity_contact">ContactActivity</string>
+
+    <string name="id">User ID(Introduce a 0 in case you do not have a ID):</string>
+    <string name="name">Name:</string>
+    <string name="email">Email:</string>
+    <string name="telephone">Telephone:</string>
+    <string name="feedback">Feedback Details:</string>
+
+    <string name="errorFieldRequired">Field required</string>
+    <string name="validate">Validate</string>
+    <string name="title_activity_contac_us">ContacUsActivity</string>
 
 </resources>
